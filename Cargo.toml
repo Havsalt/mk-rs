@@ -1,0 +1,21 @@
+[package]
+name = "havsalt-tools-mk"
+version = "0.1.0"
+edition = "2021"
+description = "Command for creating empty files, like mkdir - but for files"
+license = "MIT"
+homepage = "https://github.com/havsalt/make-file-rs"
+
+[[bin]]
+name = "mk"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = "z"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive", "wrap_help"] }
+clap-markdown = "0.1"
+clap_complete = "4.5"
+clap_mangen = "0.2"
+havsalt-clap-styles = "0.1"
