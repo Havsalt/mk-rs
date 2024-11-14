@@ -1,6 +1,6 @@
 [package]
 name = "havsalt-tools-mk"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Command for creating empty files, like mkdir - but for files"
 license = "MIT"
